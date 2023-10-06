@@ -364,7 +364,8 @@ MonoBehaviour:
   changerFinalLogo: {fileID: 2029154463}
   changerFinalButton: {fileID: 2101644000}
   changerBGButton: {fileID: 538168275}
-  IdleTimeSetting: 20
+  button: {fileID: 2101643997}
+  IdleTimeSetting: 4
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,7 +2031,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2101643998}
   m_OnClick:
     m_PersistentCalls:

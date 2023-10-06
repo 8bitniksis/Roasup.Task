@@ -11,6 +11,7 @@ public class ParkerInfo : MonoBehaviour
     public SpriteAlphaChanger changerFinalLogo;
     public SpriteAlphaChanger changerFinalButton;
     public SpriteAlphaChanger changerBGButton;
+    public Button button;
 
     private YieldInstruction fadeInstruction = new YieldInstruction();
 
@@ -23,10 +24,13 @@ public class ParkerInfo : MonoBehaviour
     void Awake() {
 
         LastIdleTime = Time.time;
+        button.interactable = false;
     }
     
     private void Update() 
     {
+        //button.interactable = false;
+
         if(Input.anyKey){
             LastIdleTime = Time.time;
         }
@@ -71,6 +75,7 @@ public class ParkerInfo : MonoBehaviour
             changerFinalLogo.UpdateAlpha(true);
             changerFinalButton.UpdateAlpha(true);
             changerBGButton.UpdateAlpha(true);
+            button.interactable = true;
         }
     }
     
